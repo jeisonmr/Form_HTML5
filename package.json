@@ -1,0 +1,24 @@
+{
+  "name": "formulario-html5",
+  "version": "1.0.0",
+  "description": "Formulario semantico en HTML5 y TailwindCSS",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeisonmr/Form_HTML5.git"
+  },
+  "keywords": [
+    "Formulario",
+    "Form",
+    "HTML5",
+    "TailwinCSS",
+    "Semantico"
+  ],
+  "author": "Jeison Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeisonmr/Form_HTML5/issues"
+  },
+  "homepage": "https://github.com/jeisonmr/Form_HTML5#readme"
+}

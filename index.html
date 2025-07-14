@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="https://www.demo.dev" />
+    <title>Proyecto | Formulario HTML5</title>
+    <meta name="description" content="Este es un proyecto personal, para implementar las bases de HTML5" />
+    
+    <meta property="og:title" content="Formulario HTML5" />
+    <meta property="og:description" content="Este es un proyecto personal, para implementar las bases de HTML5" />
+    <meta property="og:image" content="https://www.demo.com/imagen.jpg" />
+    <meta property="og:url" content="https://www.demo.com/pagina" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Formulario HTML5" />
+    <meta name="twitter:description" content="Este es un proyecto personal, para implementar las bases de HTML5" />
+    <meta name="twitter:image" content="https://www.demo.com/imagen.jpg" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://www.demo.dev",
+        "@type": "Form",
+        "headline": "Formulario HTML5",
+        "author": {
+          "@type": "Person",
+          "name": "Formulario HTML5"
+        },
+        "datePublished": "2025-07-31"
+      }
+    </script>
+  </head>
+  <body>
+    <section class="w-full sm:h-[100vh] flex gap-5 justify-center items-center bg-gray-50 p-[20px]">
+      <article class="flex flex-col sm:flex-row shadow-2xl rounded-xl my-[10px]">
+        <address class="py-[10px] sm:py-[30px] pl-[25px] sm:pr-[200px] font-sans text-[#3e9af0] bg-[#FFFFFF] flex flex-col gap-[20px] sm:gap-[40px] not-italic rounded-t-xl sm:rounded-t-none sm:rounded-l-xl relative overflow-hidden">
+          <hgroup>
+            <h2 class="font-bold text-[30px] text-[#1b7bcf]">Contactanos</h2>
+          </hgroup>
+
+          <ul class="flex flex-col gap-5 font-normal z-30">
+            <li>
+              <a href="mailto:demo@demo.dev" class="flex gap-3 items-center">
+                <figure class="w-[20px] h-auto">
+                  <img class="w-full h-auto object-contain" src="/src/icons/mail.png" alt="Correo electronico">
+                </figure>
+                <p>contacto@demo.dev</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="geo:10.975829354872182, -74.79892155802456" class="flex gap-3 items-center">
+                <figure class="w-[20px] h-auto">
+                  <img class="w-full h-auto object-contain" src="/src/icons/map.png" alt="Ubicación">
+                </figure>
+                <p>Colombia - Barranquilla</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+57300000000" class="flex gap-3 items-center">
+                <figure class="w-[20px] h-auto">
+                  <img class="w-full h-auto object-contain" src="/src/icons/phone.png" alt="Numero de telefono">
+                </figure>
+                <p>+57 300 000 000</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="z-20">
+            <p class="font-medium text-[#1da1f3] mb-5">Nuestras redes sociales</p>
+            <figure class="flex gap-6 items-center">
+              <a href="#"><img class="w-[25px] h-auto hover:scale-125 duration-300" src="/src/icons/facebook.png" alt="Facebook"></a class="flex gap-3 items-center">
+              <a href="#"><img class="w-[25px] h-auto hover:scale-125 duration-300" src="/src/icons/youtube.png" alt="Youtube"></a class="flex gap-3 items-center">
+              <a href="#"><img class="w-[25px] h-auto hover:scale-125 duration-300" src="/src/icons/twitter.png" alt="Twitter"></a class="flex gap-3 items-center">
+              <a href="#"><img class="w-[25px] h-auto hover:scale-125 duration-300" src="/src/icons/instagram.png" alt="Intagram"></a class="flex gap-3 items-center">
+            </figure>
+          </div>
+
+          <figure class="">
+            <img src="/src/icons/wall.png" alt="Imagen de fondo" class="w-[25rem] h-auto absolute bottom-0 -right-50 z-10 hidden sm:block">
+            <img src="/src/icons/wall.png" alt="Imagen de fondo" class="w-[25rem] h-auto absolute -bottom-40 -left-50 z-10 object-cover hidden sm:block">
+            <img src="/src/icons/wall.png" alt="Imagen de fondo" class="w-[25rem] h-auto absolute -top-50 -right-60 rotate-100 z-10 object-cover hidden sm:block">
+          </figure>
+        </address>
+
+        <form id="contactForm" name="myForm" action="/send/" method="post" class=" font-mono py-[25px] pl-[30px] pr-[25px] bg-[#1b7bcf] text-white rounded-b-xl sm:rounded-b-none sm:!rounded-r-xl z-20">
+          <hgroup class="font-sans font-bold mb-[20px]">
+            <h1 class="text-[30px]">Registrate</h1>
+            <p class="text-[18px]">Envía tus datos y pronto estaremos en contacto!</p>
+          </hgroup>
+
+          <fieldset class="flex flex-col border border-white rounded-lg p-3 mb-[10px]">
+            <legend>Usuario</legend>
+
+            <label class="flex flex-col">
+              Nombre
+              <input type="text" name="firstname" id="firstname" autofocus placeholder="Nombre completo" class="focus:outline-0" required/>
+            </label>
+          </fieldset>
+
+          <fieldset class="border border-white rounded-lg p-3 mb-[10px] flex flex-col gap-3">
+            <legend>Contacto</legend>
+
+            <label class="flex flex-col">
+              Correo
+              <input type="email" name="email" id="email" placeholder="correo@gmail.com" class="focus:outline-0" required/>
+            </label>
+
+            <label class="flex flex-col">
+              Talefono
+              <input type="tel" name="tel" id="tel" placeholder="6053000000" class="focus:outline-0" required/>
+						</label>
+					</fieldset>
+
+          <fieldset class="border border-white rounded-lg p-3 mb-[10px]">
+            <legend for="ask">Mensaje</legend>
+            <label class="flex flex-col">
+              <textarea name="ask" id="ask" cols="auto" rows="4" placeholder="Mensaje..." class="focus:outline-0" required></textarea>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="rounded-xl py-2 px-4 hover:bg-white hover:text-[#1b7bcf] duration-300">Enviar</button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
